@@ -15,6 +15,7 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
+    "start": "ts-node src/services/rsvp.service.ts",
     "test": "jest",
     "build": "tsc"
   },
