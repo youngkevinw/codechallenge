@@ -23,7 +23,7 @@ Returns an array of players who have responded with "Yes".
 ### getResponseCounts
 Returns a count of each RSVP status, and total for all counts of RSVP.
 
-### private isValidStatus
+### isValidStatus
 Checks whether the provided status is one of the allowed types (Yes, No, or Maybe).
 
 ## Testing
