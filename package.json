@@ -41,12 +41,10 @@
     "@types/jsonwebtoken": "^9.0.9",
     "@types/lodash": "^4.17.16",
     "@types/nanoid": "^2.1.0",
-    "@types/node": "^22.14.1",
     "@types/pino": "^7.0.4",
     "jest": "^29.7.0",
     "ts-jest": "^29.3.2",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.8.3"
+    "ts-node": "^10.9.2"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
@@ -60,7 +58,6 @@
     "jsonwebtoken": "^9.0.2",
     "lodash": "^4.17.21",
     "nanoid": "^5.1.5",
-    "nodemon": "^3.1.9",
     "pino": "^9.6.0",
     "pino-pretty": "^13.0.0",
     "reflect-metadata": "^0.2.2"
