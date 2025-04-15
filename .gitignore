@@ -1,0 +1,18 @@
+# Compiled JavaScript files
+*.js
+*.js.map
+*.d.ts
+
+# Directories
+dist/
+build/
+node_modules/
+coverage/
+
+# IDE/Editor files
+.vscode/
+.idea/
+
+# Environment files
+.env
+.env.local
