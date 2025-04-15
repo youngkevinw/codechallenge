@@ -28,11 +28,11 @@ Checks whether the provided status is one of the allowed types (Yes, No, or Mayb
 
 ## Testing
 Either:
-1. run Jest via npm test \rsvp.service.test.ts\ at test folder level
+1. run Jest via npm test `rsvp.service.test.ts` at test folder level
 
 OR
 
-2. run \node index.js\ at src folder level (there is a converted js file for quick testing, results will be printed in console)
+2. run `node index.js` at src folder level (there is a converted js file for quick testing, results will be printed in console)
 
 ## Notes
 #### RSVP status is expected to be one of: 'Yes' | 'No' | 'Maybe'.
