@@ -1,5 +1,5 @@
 import { RsvpService } from "../../src/services/rsvp.service";
-import { LoggerMock } from "../mocks/logger-mock";
+import { LoggerMock } from "../mocks/logger.mock";
 import { RsvpStatus } from "../../src/models/rsvpForm";
 import { Player } from "../../src/models/player";
 
