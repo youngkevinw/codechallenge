@@ -3,15 +3,15 @@
 A microservice written in typescript for managing RSVP responses from Players. Contains jest test files for testing.
 
 ## Features
-### Add or update RSVP responses using player IDs.
+#### Add or update RSVP responses using player IDs.
 
-### Validate RSVP status (Yes, No, or Maybe).
+#### Validate RSVP status (Yes, No, or Maybe).
 
-### Retrieve a list of confirmed attendees (said Yes).
+#### Retrieve a list of confirmed attendees (said Yes).
 
-### Generate summary counts of all RSVP responses.
+#### Generate summary counts of all RSVP responses.
 
-### Built-in logging of events and errors.
+#### Built-in logging of events and errors.
 
 ## Methods
 ### addOrUpdateRSVP
@@ -27,8 +27,8 @@ Returns a count of each RSVP status, and total for all counts of RSVP.
 Checks whether the provided status is one of the allowed types (Yes, No, or Maybe).
 
 ## Notes
-### RSVP status is expected to be one of: 'Yes' | 'No' | 'Maybe'.
+#### RSVP status is expected to be one of: 'Yes' | 'No' | 'Maybe'.
 
-### Duplicate entries (by player ID) will be updated, not duplicated.
+#### Duplicate entries (by player ID) will be updated, not duplicated.
 
-### Invalid statuses will only be logged.
+#### Invalid statuses will only be logged.
