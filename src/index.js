@@ -13,7 +13,7 @@ var rsvpService = new rsvp_service_1.RsvpService(logger);
 rsvpService.addOrUpdateRSVP(Players[0], 'Yes'); // Adam says Yes
 rsvpService.addOrUpdateRSVP(Players[1], 'No'); // Billy says No
 rsvpService.addOrUpdateRSVP(Players[2], 'Yes'); // Charlie says Maybe
-// rsvpService.addOrUpdateRSVP(Players[0], 'Maybe'); // Adam changes to Maybe
+rsvpService.addOrUpdateRSVP(Players[0], 'Maybe'); // Adam changes to Maybe
 //get results
 console.log('All Attendees:', rsvpService.getConfirmedAttendees(Players));
 console.log('RSVP Counts:', rsvpService.getResponseCounts());

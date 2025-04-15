@@ -27,12 +27,13 @@ Returns a count of each RSVP status, and total for all counts of RSVP.
 Checks whether the provided status is one of the allowed types (Yes, No, or Maybe).
 
 ## Testing
+
 Either:
 1. run Jest via npm test `rsvp.service.test.ts` at test folder level
 
 OR
 
-2. run `node index.js` at src folder level (there is a converted js file for quick testing, results will be printed in console)
+2. Change any responses to any, add/remove players, add invalid response to players in the `index.js` file, then run `node index.js` at src folder level (there is a converted js file for quick testing, results will be printed in console)
 
 ## Notes
 #### RSVP status is expected to be one of: 'Yes' | 'No' | 'Maybe'.
