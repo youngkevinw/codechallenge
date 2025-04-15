@@ -15,8 +15,20 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "dev": "nodemon --config nodemon.json src/server.ts"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/*.spec.[jt]s?(x)",
+      "**/*.test.[jt]s?(x)"
+    ],
+    "modulePaths": [
+      "<rootDir>/src"
+    ],
+    "rootDir": "."
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.2",
@@ -25,11 +37,14 @@
     "@types/cookie-parser": "^1.4.8",
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.1",
+    "@types/jest": "^29.5.14",
     "@types/jsonwebtoken": "^9.0.9",
     "@types/lodash": "^4.17.16",
     "@types/nanoid": "^2.1.0",
     "@types/node": "^22.14.1",
     "@types/pino": "^7.0.4",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.3.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   },
@@ -49,5 +64,6 @@
     "pino": "^9.6.0",
     "pino-pretty": "^13.0.0",
     "reflect-metadata": "^0.2.2"
-  }
+  },
+  "keywords": []
 }
