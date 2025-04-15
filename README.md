@@ -33,7 +33,7 @@ Either:
 
 OR
 
-2. Change any responses to any, add/remove players, add invalid response to players in the `index.js` file, then run `node index.js` at src folder level (there is a converted js file for quick testing, results will be printed in console)
+2. Change any responses to any, add/remove players, add invalid response to players in the `index.js` file, then run `node index.js` at src folder level (converted via `tsc` command, results will be printed in console)
 
 ## Notes
 #### RSVP status is expected to be one of: 'Yes' | 'No' | 'Maybe'.
