@@ -3,9 +3,8 @@ import { Player } from "../models/player";
 import { Logger } from "../utils/logger";
 
 export class RsvpService {
-    //map to look up by player id
     //declare type of entries
-    private rsvpEntries: Map<Player['id'], RsvpForm>;
+    private rsvpEntries: Map<Player['id'], RsvpForm>; //map to look up by player id
     
     //initialize array of rsvpforms
     constructor(
@@ -16,10 +15,9 @@ export class RsvpService {
     }
 
     //add or update the rsvp form, dont use name, id is unique
-    //check if status is valid, if not, log error and return
     addOrUpdateRSVP(player: Player, status: RsvpStatus): void {
         if (!this.isValidStatus(status)) {
-            this.logger.error(`Invalid RSVP status: ${status}`);
+            this.logger.error(`Invalid RSVP status: ${status}`);    //check if status is valid, if not, log error and return
             return;
         }
 
@@ -45,7 +43,7 @@ export class RsvpService {
         };
     }
 
-    //helper function, logs messages, check if the status is valid, if not, log and return error
+    //helper function, logs messages, check if the status is valid
     private isValidStatus(status: string): status is RsvpStatus {
         return ['Yes', 'No', 'Maybe'].includes(status);
     }
