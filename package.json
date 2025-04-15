@@ -15,8 +15,7 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "dev": "nodemon --config nodemon.json src/server.ts"
+    "test": "jest"
   },
   "jest": {
     "preset": "ts-jest",
