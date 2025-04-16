@@ -26,6 +26,9 @@ Returns a count of each RSVP status, and total for all counts of RSVP.
 ### isValidStatus
 Checks whether the provided status is one of the allowed types (Yes, No, or Maybe).
 
+## Installation
+Use `npm ci` to install dependencies. This is HIGHLY recommended.
+
 ## Testing
 run Jest via `npm test ` at root level.
 
