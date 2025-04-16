@@ -22,7 +22,8 @@
     "start": "ts-node src/services/rsvp.service.ts",
     "test": "jest",
     "build": "tsc",
-    "clean": "rimraf node_modules package-lock.json && npm install"
+    "clean": "rimraf node_modules package-lock.json && npm install",
+    "postinstall": "ln -sf ./node_modules/jest/bin/jest.js ./node_modules/.bin/jest"
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.2",
