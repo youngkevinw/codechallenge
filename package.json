@@ -19,7 +19,6 @@
     "npm": ">=9.0.0"
   },
   "scripts": {
-    "prepare": "npm install --omit=dev",
     "start": "ts-node src/services/rsvp.service.ts",
     "test": "jest --config=jest.config.js",
     "build": "tsc",
