@@ -1,4 +1,6 @@
 module.exports = {
+    rootDir: './',
+
     preset: 'ts-jest',
     testEnvironment: 'node',
     testMatch: ['**/tests/**/*.test.ts'],
@@ -8,6 +10,10 @@ module.exports = {
     },
 
     collectCoverage: true,
+    collectCoverageFrom: [
+      'src/**/*.{js,jsx,ts,tsx}', 
+      '!src/**/*.d.ts'
+    ],
     coverageDirectory: 'coverage',
     coverageReporters: ['text-summary', 'lcov'],
   
