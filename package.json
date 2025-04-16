@@ -23,7 +23,6 @@
     "test": "jest --config=jest.config.js",
     "build": "tsc",
     "clean": "rimraf node_modules package-lock.json && npm install",
-    "postinstall": ""
   },
   "jest": {
     "preset": "ts-jest",
