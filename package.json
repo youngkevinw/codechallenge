@@ -22,7 +22,9 @@
     "prepare": "npm install --omit=dev",
     "start": "ts-node src/services/rsvp.service.ts",
     "test": "jest --config=jest.config.js",
-    "build": "tsc"
+    "build": "tsc",
+    "clean": "rimraf node_modules package-lock.json && npm install",
+    "postinstall": "npm run test"
   },
   "jest": {
     "preset": "ts-jest",
