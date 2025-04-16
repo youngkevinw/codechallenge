@@ -23,7 +23,7 @@
     "test": "jest",
     "build": "tsc",
     "clean": "rimraf node_modules package-lock.json && npm install",
-    "postinstall": "ln -sf ./node_modules/jest/bin/jest.js ./node_modules/.bin/jest"
+    "postinstall": "if exist .\\node_modules\\.bin\\jest del .\\node_modules\\.bin\\jest & mklink .\\node_modules\\.bin\\jest .\\node_modules\\jest\\bin\\jest.js || ln -sf ./node_modules/jest/bin/jest.js ./node_modules/.bin/jest"
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.2",
