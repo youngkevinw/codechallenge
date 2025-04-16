@@ -1,4 +1,4 @@
-import { Logger } from "../../../src/utils/logger";
+import { Logger } from "../../src/utils/logger";
 
 export class LoggerMock implements Logger {
     public logs: string[] = [];
