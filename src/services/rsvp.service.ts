@@ -36,11 +36,16 @@ export class RsvpService {
     //get all counts of responses, except maybe, put all entries in form of array
     getResponseCounts() {
         const allResponses = Array.from(this.rsvpEntries.values());
-        return {
-            Yes: allResponses.filter(entry => entry.status === 'Yes').length,
-            No: allResponses.filter(entry => entry.status === 'No').length,
-            Total: allResponses.length,
-        };
+        return allResponses.reduce((counts, entry) => {
+            if (entry.status === 'Yes') {
+                counts.Yes++;
+                }
+            if (entry.status === 'No') {
+                counts.No++;
+                }
+            counts.Total++;
+            return counts;
+        }, { Yes: 0, No: 0, Total: 0 });
     }
 
     //helper function, logs messages, check if the status is valid
